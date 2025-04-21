@@ -30,3 +30,20 @@
 *.exe
 *.out
 *.app
+
+# VS Code settings folder
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Backup and temp files
+*~
+*.log
+*.tmp
+
+# Code::Blocks IDE
+*.layout
+*.depend
+*.layout.save

@@ -1,0 +1,185 @@
+Q1. print the pattern:
+
+****
+****
+****
+****
+
+Q2. print the pattern:
+
+*
+**
+***
+****
+
+Q3. print the pattern:
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+
+Q4. print the pattern:
+
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+
+Q5. print the pattern:
+
+* * * * 
+* * * 
+* *
+* 
+
+Q6. print the pattern:
+
+1 2 3 4 
+1 2 3
+1 2
+1
+
+Q7. print the pattern:
+
+   *   
+  ***
+ *****
+*******
+
+Q8. print the pattern:
+
+*******
+ *****
+  ***
+   *
+
+Q9. print the pattern:
+
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+
+Q10. print the pattern:
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*   
+
+Q11. print the pattern:
+
+1
+01
+101
+0101
+10101
+
+Q12. print the pattern:
+
+1      1
+12    21
+123  321
+12344321
+
+Q13. print the pattern:
+
+1 
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+
+Q14. print the pattern:
+
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+
+Q15. print the pattern:
+
+A B C D E 
+A B C D 
+A B C 
+A B 
+A 
+
+Q16. print the pattern:
+
+A 
+B B
+C C C
+D D D D
+E E E E E
+F F F F F F
+
+Q17. print the pattern:
+
+   A   
+  ABA  
+ ABCBA 
+ABCDCBA
+
+Q18. print the pattern:
+
+E
+DE
+CDE
+BCDE
+ABCDE
+
+Q19. print the pattern:
+
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+
+Q20. print the pattern:
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+Q21. print the pattern:
+
+****
+*  *
+*  *
+****
+
+Q22. print the pattern:
+
+4444444
+4333334
+4322234
+4321234
+4322234
+4333334
+4444444

@@ -1,0 +1,265 @@
+### 🧾 Pattern Problems – Crisp Notes for Revision
+
+---
+
+#### 🟫 pattern01_solid_rectangle
+**Pattern:** Full rectangle of stars (n rows x m columns)
+- Loop: Row × Column
+- Simple nested loops
+
+#### 🔼 pattern02_right_triangle
+**Pattern:** Right-angled triangle with stars
+- Loop: Row from 1 to n
+- Print row number of stars
+
+#### 🔢 pattern03_number_triangle
+**Pattern:** Triangle with increasing numbers per row
+- Loop: Row from 1 to n
+- Print 1 to Row number
+
+#### 🔁 pattern04_row_repeat_number
+**Pattern:** Row number repeated in each row
+- Loop: Row from 1 to n
+- Print row, row times
+
+#### 🔽 pattern05_inverted_triangle
+**Pattern:** Inverted star triangle
+- Loop: Row from n to 1
+- Print row number of stars
+
+#### 🔁 pattern06_inverted_number_triangle
+**Pattern:** Inverted number triangle from 1
+- Loop: Row from n to 1
+- Print 1 to Row number
+
+#### 🔺 pattern07_pyramid
+**Pattern:** Centered pyramid
+- Spaces: n - row
+- Stars: 2*row - 1
+
+#### 🔻 pattern08_inverted_pyramid
+**Pattern:** Centered inverted pyramid
+- Spaces: row
+- Stars: 2*(n - row) - 1
+
+#### 💎 pattern09_diamond
+**Pattern:** Pyramid + Inverted pyramid
+- Build upper and lower triangle separately
+
+#### ⛰️ pattern10_star_hill
+**Pattern:** Left + right triangle (like a hill)
+- Increasing then decreasing stars
+
+#### 🔣 pattern11_zero_one_triangle
+**Pattern:** 0 and 1 alternate triangle
+- Rule: (row + col) % 2 == 0 → 1, else 0
+
+#### 🔄 pattern12_reflected_pyramid
+**Pattern:** Numbers + spaces + reversed numbers
+- Use spaces: 2*(n - row)
+- Numbers: 1 to row, then row to 1
+
+#### 🔢 pattern13_continuous_numbers
+**Pattern:** Continuous increasing numbers
+- Use a counter variable
+
+#### 🔡 pattern14_alphabet_triangle
+**Pattern:** A to row alphabet
+- Loop: 'A' to 'A' + row
+
+#### 🔠 pattern15_inverted_alphabet
+**Pattern:** A to (n - row) alphabets
+- Decreasing alphabet length
+
+#### 🔤 pattern16_repeated_alphabet
+**Pattern:** Row letter repeated row times
+- Use 'A' + row index
+
+#### 🔁 pattern17_palindromic_alphabet
+**Pattern:** A to center, then back to A
+- Spaces: n - row
+- Mirror chars around center
+
+#### 🔙 pattern18_reverse_alphabet
+**Pattern:** Starts from E, goes back to A
+- Print char('E' - row + col)
+
+#### 🦋 pattern19_butterfly
+**Pattern:** Stars + spaces + stars
+- First half: Stars decrease, spaces increase
+- Second half: Reverse
+
+#### ⌛ pattern20_hourglass
+**Pattern:** Opposite of butterfly
+- First half: Stars increase, spaces decrease
+- Then reverse
+
+#### ⬜ pattern21_hollow_square
+**Pattern:** Full stars on border, spaces inside
+- if i==0 or i==n-1 or j==0 or j==n-1 → print '*'
+
+#### 🌀 pattern22_concentric_rectangle
+**Pattern:** Layered numbers decreasing to center
+- Formula: n - min(top, bottom, left, right)
+- Full 2n - 1 grid
+
+---
+
+📌 These notes are designed for *quick recall*, not full explanations.  
+Keep the logic in mind, write the condition or core loop idea when revising.  
+You can now copy this into your notebook ✍️
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 🧾 Pattern Problems – Crisp Notes for Revision
+
+---
+
+#### 🟫 pattern01_solid_rectangle
+**Pattern:** Full rectangle of stars (n rows x m columns)
+- Outer loop: `i = 1 to n` (rows)
+- Inner loop: `j = 1 to m` (columns)
+- Simple nested loops to print '*' in each cell
+
+#### 🔼 pattern02_right_triangle
+**Pattern:** Right-angled triangle with stars
+- Outer loop: `i = 1 to n`
+- Inner loop: `j = 1 to i` (print `*`)
+
+#### 🔢 pattern03_number_triangle
+**Pattern:** Triangle with increasing numbers per row
+- Outer loop: `i = 1 to n`
+- Inner loop: `j = 1 to i` (print `j`)
+
+#### 🔁 pattern04_row_repeat_number
+**Pattern:** Row number repeated in each row
+- Outer loop: `i = 1 to n`
+- Inner loop: `j = 1 to i` (print `i`)
+
+#### 🔽 pattern05_inverted_triangle
+**Pattern:** Inverted star triangle
+- Outer loop: `i = n to 1`
+- Inner loop: `j = 1 to i` (print `*`)
+
+#### 🔁 pattern06_inverted_number_triangle
+**Pattern:** Inverted number triangle from 1
+- Outer loop: `i = n to 1`
+- Inner loop: `j = 1 to i` (print `j`)
+
+#### 🔺 pattern07_pyramid
+**Pattern:** Centered pyramid
+- Outer loop: `i = 1 to n`
+- Inner loop 1: `j = 1 to n - i` (print space)
+- Inner loop 2: `j = 1 to 2*i - 1` (print `*`)
+
+#### 🔻 pattern08_inverted_pyramid
+**Pattern:** Centered inverted pyramid
+- Outer loop: `i = 0 to n - 1`
+- Inner loop 1: `j = 0 to i - 1` (print space)
+- Inner loop 2: `j = 1 to 2*(n - i) - 1` (print `*`)
+
+#### 💎 pattern09_diamond
+**Pattern:** Pyramid + Inverted pyramid
+- Upper half: same as pattern07
+- Lower half: same as pattern08
+
+#### ⛰️ pattern10_star_hill
+**Pattern:** Left + right triangle (like a hill)
+- Outer loop: `i = 1 to max rows`
+- Inner loop 1: `j = 1 to i` (print `*`)
+- Inner loop 2: `j = 1 to i - 1` (print `*`)
+
+#### 🔣 pattern11_zero_one_triangle
+**Pattern:** 0 and 1 alternate triangle
+- Outer loop: `i = 1 to n`
+- Inner loop: `j = 1 to i`
+  - If (i + j) % 2 == 0 → print 1, else print 0
+
+#### 🔄 pattern12_reflected_pyramid
+**Pattern:** Numbers + spaces + reversed numbers
+- Outer loop: `i = 1 to n`
+- Inner loop 1: `j = 1 to i` (print `j`)
+- Inner loop 2: `j = 1 to 2*(n - i)` (print space)
+- Inner loop 3: `j = i to 1` (print `j`)
+
+#### 🔢 pattern13_continuous_numbers
+**Pattern:** Continuous increasing numbers
+- Outer loop: `i = 1 to n`
+- Inner loop: `j = 1 to i` (print count and increment it)
+
+#### 🔡 pattern14_alphabet_triangle
+**Pattern:** A to row alphabet
+- Outer loop: `i = 0 to n-1`
+- Inner loop: `j = 'A' to 'A'+i` (print `j`)
+
+#### 🔠 pattern15_inverted_alphabet
+**Pattern:** A to (n - row) alphabets
+- Outer loop: `i = 0 to n-1`
+- Inner loop: `j = 'A' to 'A'+(n - i - 1)`
+
+#### 🔤 pattern16_repeated_alphabet
+**Pattern:** Row letter repeated row times
+- Outer loop: `i = 0 to n-1`
+- Inner loop: `j = 0 to i` (print `char('A' + i)`)
+
+#### 🔁 pattern17_palindromic_alphabet
+**Pattern:** A to center, then back to A
+- Outer loop: `i = 0 to n-1`
+- Inner loop 1: `j = 1 to n - i - 1` (print space)
+- Inner loop 2: `j = 'A' to 'A'+i-1` (print `j`)
+- Center: `print char('A'+i)`
+- Inner loop 3: `j = 'A'+i-1 to 'A'` (print `j`)
+
+#### 🔙 pattern18_reverse_alphabet
+**Pattern:** Starts from E, goes back to A
+- Outer loop: `i = 0 to n-1`
+- Inner loop: `j = 0 to i` (print `char('E' - i + j)`)
+
+#### 🦋 pattern19_butterfly
+**Pattern:** Stars + spaces + stars
+- Outer loop: `i = 0 to 2n - 1`
+- Inner loop 1: print `*` (n - i or i - n + 1)
+- Inner loop 2: print spaces
+- Inner loop 3: repeat stars (same as left wing)
+
+#### ⌛ pattern20_hourglass
+**Pattern:** Opposite of butterfly
+- Outer loop: `i = 0 to 2n - 1`
+- Inner loop 1: print `*` (based on i)
+- Inner loop 2: spaces (based on i)
+- Inner loop 3: right-side stars
+
+#### ⬜ pattern21_hollow_square
+**Pattern:** Full stars on border, spaces inside
+- Outer loop: `i = 0 to n - 1`
+- Inner loop: `j = 0 to n - 1`
+  - If i==0 or j==0 or i==n-1 or j==n-1 → print '*'
+  - Else print space
+
+#### 🌀 pattern22_concentric_rectangle
+**Pattern:** Layered numbers decreasing to center
+- Outer loop: `i = 0 to 2n - 2`
+- Inner loop: `j = 0 to 2n - 2`
+  - Calculate: `val = n - min(top, bottom, left, right)`
+  - Print val
+
+---
+
+📌 These notes are designed for *quick recall*, not full explanations.  
+Focus on understanding the **loop structure** and where the logic lives.
+
